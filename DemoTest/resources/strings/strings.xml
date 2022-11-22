@@ -1,0 +1,8 @@
+<strings>
+    <string id="AppName">DemoTest</string>
+
+    <string id="prompt">Click the menu button</string>
+
+    <string id="menu_label_1">start gps</string>
+    <string id="menu_label_2">stop gps</string>
+</strings>

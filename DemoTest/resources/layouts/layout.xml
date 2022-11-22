@@ -1,0 +1,107 @@
+{
+  "v7": {
+    "features": [
+      {
+        "name": "list_metric",
+        "threshold": 200,
+        "sample_ratio": 1,
+        "daily_report_limit": 30,
+        "event_sample_ratio": 0.1
+      },
+      {
+        "name": "looper_metric",
+        "threshold": 200,
+        "sample_ratio": 1,
+        "daily_report_limit": 30,
+        "event_sample_ratio": 0.1
+      },
+      {
+        "name": "looper_stack",
+        "threshold": 200,
+        "sample_ratio": 1,
+        "daily_report_limit": 30,
+        "event_sample_ratio": 0.5
+      },
+      {
+        "name": "DB",
+        "sample_ratio": 0,
+        "daily_report_limit": 10,
+        "event_sample_ratio": 0.1
+      },
+      {
+        "name": "IO",
+        "sample_ratio": 0,
+        "daily_report_limit": 10,
+        "event_sample_ratio": 0.1
+      },
+      {
+        "name": "activity_leak",
+        "auto_dump": true,
+        "sample_ratio": 1,
+        "loop_max_count": 100,
+        "daily_report_limit": 100,
+        "event_sample_ratio": 1,
+        "keep_uuid_when_leaked": false,
+        "enable_fragment_inspect": true
+      },
+      {
+        "name": "java_memory_ceiling_hprof",
+        "threshold": 85,
+        "sample_ratio": 1,
+        "daily_report_limit": 2,
+        "event_sample_ratio": 0.1
+      },
+      {
+        "name": "java_memory_ceiling_value",
+        "threshold": 85,
+        "sample_ratio": 1,
+        "daily_report_limit": 3,
+        "event_sample_ratio": 0.1
+      },
+      {
+        "name": "battery",
+        "sample_ratio": 0,
+        "daily_report_limit": 10,
+        "event_sample_ratio": 0.1
+      },
+      {
+        "name": "device",
+        "sample_ratio": 1,
+        "daily_report_limit": 1,
+        "event_sample_ratio": 0.001
+      },
+      {
+        "name": "bit_bitmap",
+        "threshold": 150,
+        "sample_ratio": 1,
+        "daily_report_limit": 100,
+        "event_sample_ratio": 0.1
+      },
+      {
+        "name": "fd_leak",
+        "threshold": 400,
+        "sample_ratio": 1,
+        "fd_monitor_switch": 1,
+        "daily_report_limit": 3,
+        "event_sample_ratio": 1,
+        "hprof_strip_switch": 9,
+        "dump_report_max_num": 2,
+        "detail_event_sample_ratio": 1,
+        "report_event_sample_ratio": 0.2
+      },
+      {
+        "name": "native_memory",
+        "app_min_size": 4096,
+        "sample_ratio": 0.8,
+        "sys_min_size": 4096,
+        "enable_sys_hook": false,
+        "enable_libc_hook": true,
+        "max_physical_pss": 1073741824,
+        "sys_sample_factor": 100,
+        "daily_report_limit": 5,
+        "event_sample_ratio": 0.01
+      }
+    ],
+    "sample_ratio": 1
+  }
+}
